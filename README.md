@@ -35,6 +35,31 @@ myanmar-kilo-taxi/
 
 ---
 
+// Auth Routes
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/refresh
+POST /api/auth/logout
+
+// Booking Routes
+GET    /api/bookings
+POST   /api/bookings
+GET    /api/bookings/:id
+PUT    /api/bookings/:id/status
+DELETE /api/bookings/:id
+
+// Driver Routes
+GET    /api/drivers/available
+POST   /api/drivers/location
+GET    /api/drivers/:id
+
+// Payment Routes
+POST   /api/payments/process
+GET    /api/payments/history
+POST   /api/payments/webhook
+
+---
+
 ## 🚀 Features
 
 - 🧭 **Live Map Tracking** (Socket.IO)
